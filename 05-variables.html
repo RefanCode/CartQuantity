@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CartQuantity</title>
+</head>
+
+<body>
+
+    <h2>Mini shop</h2>
+
+    <a href="05-variabelTask.html"><button>training</button></a>
+
+    <div>
+        <button onclick="console.log(`cart Quantity : ${cartQuantity}`);">Show Quantity</button>
+
+        <button onclick="
+    cartQuantity = cartQuantity + 1;
+    console.log(`cart Quantity : ${cartQuantity}`);
+    "> Add to cart</button>
+
+        <button onclick="
+    cartQuantity = cartQuantity + 2;
+    console.log(`cart Quantity : ${cartQuantity}`);
+    ">+2</button>
+
+        <button onclick="
+    cartQuantity = cartQuantity + 3;
+    console.log(`cart Quantity : ${cartQuantity}`);
+    ">+3</button>
+
+        <button onclick="
+    cartQuantity = cartQuantity += 4;
+    console.log(`cart Quantity : ${cartQuantity}`);
+    ">+4</button>
+
+        <br>
+
+        <button onclick="
+    cartQuantity = --cartQuantity;
+    console.log(`cart Quantity : ${cartQuantity}`);
+    "> remove from cart</button>
+
+        <button onclick="
+    cartQuantity = cartQuantity -= 2;
+    console.log(`cart Quantity : ${cartQuantity}`);
+    ">-2</button>
+
+         <button onclick="
+    cartQuantity = cartQuantity -= 3;
+    console.log(`cart Quantity : ${cartQuantity}`);
+    ">-3</button>
+
+
+        <button onclick="
+    cartQuantity = cartQuantity - cartQuantity;
+    console.log(`cart is reseted`);
+    console.log(`cart Quantity : ${cartQuantity}`);
+    ">Reset Cart</button>
+    </div>
+
+
+    <script>
+        let cartQuantity = 0;
+    </script>
+</body>
+
+</html>
